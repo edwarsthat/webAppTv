@@ -10,14 +10,14 @@ import TvDashboard from '../components/TvDashboard';
     <!-- ── Cabecera: logo | reloj | fruta ── -->
     <div class="televisor-head">
       <div class="televisor-head-icon">
-        <img src="/img/logo.png" alt="Celifrut" />
+        <img src={`${import.meta.env.BASE_URL}img/logo.png`} alt="Celifrut" />
       </div>
 
       <!-- Isla Preact: reloj en tiempo real (centro) -->
       <Clock client:only="preact" />
 
       <div class="televisor-head-icon">
-        <img src="/img/limon.webp" alt="Producto" />
+        <img src={`${import.meta.env.BASE_URL}img/limon.webp`} alt="Producto" />
       </div>
     </div>
 
